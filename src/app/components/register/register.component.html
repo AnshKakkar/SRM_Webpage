@@ -1,0 +1,35 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<p>log-in works!</p>
+<div class="container">
+    <h1>ONLINE ADMISSION PORTAL</h1>
+    <div class="htxt" style="display: inline-block;">
+        <h3>Dear Applicant,</h3>
+
+        <p>Welcome to ONLINE ADMISSION PORTAL.</p>
+        
+        <h3 style="text-decoration: underline;">Existing Users:</h3>
+        <ul>
+            <li>Login with the username (Application Number)</li>
+            <li style="margin-top: 7px;">Password is your date of birth in format DDMMYYYY.<br>
+                (Eg. If your date of birth is 3rd April 2002 password format is 03042002).</li>
+        </ul>
+    </div>
+    
+        
+    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="box">
+          <mat-card-header>
+            <mat-card-title style="font-size: 18px;line-height: 27px;">Forgot Password / Send User Credentials to Registered Mail Id</mat-card-title>
+          </mat-card-header>
+          <form class="example-form">
+            <mat-card-content>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Application Number" required>
+              </mat-form-field>
+            </mat-card-content>
+            <button mat-raised-button color="primary" class="btn-block"> Send User Credentials to Registered Mail Id</button>
+            <button mat-raised-button color="primary" class="btn-block" style="margin-top: 20px;" [routerLink]="['/login']" routerLinkActive="active"><mat-icon>vpn_key</mat-icon> Back to Login</button>
+          </form>
+        </mat-card>
+      </div>
+    </div>
